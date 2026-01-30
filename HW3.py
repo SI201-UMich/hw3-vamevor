@@ -17,9 +17,6 @@ class CouponDispenser:
    
 
     def __init__(self, coupon_cards):
-        self.coupon_cards = coupon_cards
-        self.customer_roster = []
-        self.issued_indices = []
 
         """
         Initialize a new CouponDispenser object.
@@ -28,7 +25,11 @@ class CouponDispenser:
             coupon_cards (list[str]): list of possible coupons users can receive.
         """
         # TODO: Implement per instructions
-        pass
+        self.coupon_cards = coupon_cards
+        self.customer_roster = []
+        self.issued_indices = []
+
+        
 
     def __str__(self):
 
@@ -40,7 +41,11 @@ class CouponDispenser:
             str
         """
         # TODO: Implement per instructions
-        pass
+        if self.coupon_cards == []:
+            return ""
+        else:
+            return "|".join(self.coupon_cards)
+       
 
     def issue_coupon(self, name):
         """
@@ -395,5 +400,5 @@ def test():
 
 if __name__ == "__main__":
     main()
-    # test()
+    test()
 
