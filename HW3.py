@@ -6,7 +6,12 @@
 # e.g.:
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
 # Did your use of GenAI on this assignment align with your goals and guidelines in 
-#    your Gen AI contract? If not, why?
+#    your Gen AI contract? If not, why? : I used GenAI on issue_coupon and distribute_session to troubleshoot.
+# The problem with issue_coupon was that I was looking for the name in the wrong in coupon_cards instead of customer_roster
+# The problem with distribute_session was that I wasn't using the stripped_text variable I made.
+# This aligns with my GenAI contract
+
+
 
 import random
 import io
